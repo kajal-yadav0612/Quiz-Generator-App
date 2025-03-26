@@ -84,7 +84,7 @@ export const Quiz = ({
             }
             
             const response = await axios.post(
-              "http://localhost:5000/api/quiz/generate",
+              "/api/quiz/generate",
               {
                 subject: selectedSubject,
                 difficulty: selectedLevel,
@@ -258,7 +258,7 @@ export const Quiz = ({
       }, 0);
       // Save score to the server
       await axios.post(
-        "http://localhost:5000/api/quiz/save-score",
+        "/api/quiz/save-score",
         {
           testCode: testCodeState,
           score,

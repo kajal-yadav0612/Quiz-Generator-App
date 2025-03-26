@@ -51,7 +51,7 @@ export default function Leaderboard({ params }: { params: { testCode: string } }
       try {
         console.log("Fetching leaderboard for test code:", params.testCode);
         const response = await axios.get(
-          `http://localhost:5000/api/admin/leaderboard/${params.testCode}`,
+          `/api/admin/leaderboard/${params.testCode}`,
           {
             headers: {
               Authorization: `Bearer ${token}`

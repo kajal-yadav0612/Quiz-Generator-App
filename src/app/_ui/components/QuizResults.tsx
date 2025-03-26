@@ -68,7 +68,7 @@ export const QuizResults = ({
       }
       
       const response = await axios.get(
-        `http://localhost:5000/api/quiz/leaderboard/${testCode}`,
+        `/api/quiz/leaderboard/${testCode}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

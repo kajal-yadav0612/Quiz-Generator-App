@@ -62,7 +62,7 @@ export default function Home() {
 
       // Validate the test code
       const response = await axios.post(
-        "http://localhost:5000/api/quiz/generate", 
+        "/api/quiz/generate", 
         { testCode: code },
         {
           headers: {

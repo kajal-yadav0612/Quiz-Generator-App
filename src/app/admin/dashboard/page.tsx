@@ -66,7 +66,7 @@ export default function AdminDashboard() {
   const fetchTestCodes = async () => {
     try {
       const token = localStorage.getItem("adminToken");
-      const response = await axios.get("http://localhost:5000/api/admin/test-codes", {
+      const response = await axios.get("/api/admin/test-codes", {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -100,7 +100,7 @@ export default function AdminDashboard() {
     try {
       const token = localStorage.getItem("adminToken");
       const response = await axios.post(
-        "http://localhost:5000/api/admin/generate-test-code",
+        "/api/admin/generate-test-code",
         { subject, topic, difficulty },
         {
           headers: {

@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "vercel-build": "echo Skipping build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "vercel-build": "echo 'Skipping build ,deploying as serverless' ",
+     "start": "node server.js"
   },
   "keywords": [],
   "author": "",
